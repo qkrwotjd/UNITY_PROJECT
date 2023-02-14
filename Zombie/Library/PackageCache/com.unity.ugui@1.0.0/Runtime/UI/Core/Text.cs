@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace UnityEngine.UI
 {
     [RequireComponent(typeof(CanvasRenderer))]
-    [AddComponentMenu("UI/Legacy/Text", 100)]
+    [AddComponentMenu("UI/Text", 10)]
     /// <summary>
     /// The default Graphic to draw font data to screen.
     /// </summary>
@@ -590,13 +590,13 @@ namespace UnityEngine.UI
 #endif
         internal void AssignDefaultFont()
         {
-            font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+            font = Resources.GetBuiltinResource<Font>("Arial.ttf");
         }
 
         internal void AssignDefaultFontIfNecessary()
         {
             if (font == null)
-                font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+                font = Resources.GetBuiltinResource<Font>("Arial.ttf");
         }
 
         /// <summary>
